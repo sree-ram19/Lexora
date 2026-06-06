@@ -16,5 +16,5 @@ def extract_text(pdf_path):
 
 
 if __name__ == "__main__":
-    data = extract_text("sample.pdf")
+    data = extract_text("data/sample.pdf")
     print(data[0])

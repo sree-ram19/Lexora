@@ -4,7 +4,12 @@ from vectorstore import add_chunks
 from rag import answer_question
 
 # 1. Load PDF
-pages = extract_text("sample.pdf")
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+PDF_PATH = os.path.join(BASE_DIR, "data", "sample.pdf")
+
+pages = extract_text(PDF_PATH)
 
 # 2. Chunk
 chunks = chunk_text(pages)
