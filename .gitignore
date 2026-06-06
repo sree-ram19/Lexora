@@ -1,0 +1,38 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables (IMPORTANT)
+.env
+backend/.env
+
+# Virtual environment
+venv/
+env/
+
+# ChromaDB / Vector DB local storage
+db/
+*.sqlite3
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Build / deployment
+build/
+dist/
+
+# Node (if you later add frontend React)
+node_modules/
